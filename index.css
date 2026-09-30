@@ -1,0 +1,144 @@
+body {
+    width: 100%;
+    background-color: #100e0b;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 600px;
+    width: 90%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.titlePage {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+/* Content wrapper for better centering */
+.aura-bg > div[style*="z-index: 1"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Aether - Aura */
+.aura-bg {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* Layer 1 - screen */
+.aura-layer-1 {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 48% 38% at 34% 48%, rgba(34,211,238,0.24) 0%, rgba(59,130,246,0.14) 45%, transparent 78%);
+    mix-blend-mode: screen;
+    filter: blur(138px);
+    transform: translateZ(0);
+    will-change: transform;
+    pointer-events: none;
+}
+
+/* Layer 2 - screen */
+.aura-layer-2 {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 42% 40% at 70% 45%, rgba(167,139,250,0.22) 0%, rgba(217,70,239,0.10) 46%, transparent 80%);
+    mix-blend-mode: screen;
+    filter: blur(145px);
+    opacity: 0.9;
+    transform: translateZ(0);
+    will-change: transform;
+    pointer-events: none;
+}
+
+/* Layer 3 - soft-light */
+.aura-layer-3 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, transparent 30%, rgba(255,255,255,0.08) 48%, rgba(103,232,249,0.10) 55%, transparent 72%);
+    mix-blend-mode: soft-light;
+    filter: blur(88px);
+    opacity: 0.8;
+    transform: translateZ(0);
+    will-change: transform;
+    pointer-events: none;
+}
+
+/* Contrast styles for dark background */
+label {
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: rgba(34, 211, 238, 0.6);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.8), rgba(59, 130, 246, 0.8));
+    color: #ffffff;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, rgba(34, 211, 238, 1), rgba(59, 130, 246, 1));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(34, 211, 238, 0.4);
+}
+
+form {
+    width: 100%;
+}
