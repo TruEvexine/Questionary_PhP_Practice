@@ -1,53 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     width: 100%;
+    min-height: 100vh;
     background-color: #100e0b;
     color: #ffffff;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.container {
-    max-width: 600px;
-    width: 90%;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.titlePage {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.container {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    align-items: center;
-}
-
-/* Content wrapper for better centering */
-.aura-bg > div[style*="z-index: 1"] {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
 }
 
 /* Aether - Aura */
 .aura-bg {
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Content wrapper */
+.aura-bg > div[style*="z-index: 1"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.titlePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.titlePage h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 40%, #22d3ee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container,
+.about,
+.mission,
+.faq,
+.services {
+    max-width: 600px;
+    width: 90%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.about h2,
+.mission h2,
+.faq h2,
+.services h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #e2e8f0;
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* Layer 1 - screen */
@@ -88,26 +124,31 @@ body {
     pointer-events: none;
 }
 
-/* Contrast styles for dark background */
+/* Form Styles */
+form {
+    width: 100%;
+    text-align: left;
+}
+
 label {
     color: #e0e0e0;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 8px;
     display: block;
 }
 
 input[type="text"],
 input[type="number"] {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
-    padding: 16px;
+    padding: 14px 16px;
     border-radius: 8px;
     width: 100%;
     box-sizing: border-box;
     font-size: 1rem;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     transition: all 0.3s ease;
 }
 
@@ -120,14 +161,14 @@ input[type="number"]:focus {
 }
 
 input[type="submit"] {
-    background: linear-gradient(135deg, rgba(34, 211, 238, 0.8), rgba(59, 130, 246, 0.8));
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.85), rgba(59, 130, 246, 0.85));
     color: #ffffff;
     border: none;
-    padding: 16px 32px;
+    padding: 14px 28px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     transition: all 0.3s ease;
     width: 100%;
     margin-top: 10px;
@@ -137,8 +178,4 @@ input[type="submit"]:hover {
     background: linear-gradient(135deg, rgba(34, 211, 238, 1), rgba(59, 130, 246, 1));
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(34, 211, 238, 0.4);
-}
-
-form {
-    width: 100%;
 }

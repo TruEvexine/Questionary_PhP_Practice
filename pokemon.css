@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.titlePOke {
+
+}
+
+.titlePOke h1 {
+
+}
+
+.pokemonQuery {
+
+}
+
+.pokemonQuery form {
+
+}
+
+.pokemonQuery input[type="text"] {
+
+}
+
+.pokemonQuery button {
+
+}
+
+hr {
+
+}
+
+.imagePoke {
+
+}
+
+.imagePoke img {
+
+}
+
+.pokemon-info {
+
+}
+
+.pokemon-info h2 {
+
+}
+
+.pokemon-info p {
+
+}
+
+.hidden-pokemon {
+
+}
+
+.hidden-pokemon p {
+
+}
+
+#btnPokemon {
+
+}
+
+#contenedorPokemon {
+
+}
