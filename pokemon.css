@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('assets/fonts/pokemon/Pokemon Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     box-sizing: border-box;
 }
@@ -13,11 +19,21 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #100e0b;
 }
 
 
 
 .titlePOke {
+font-family: 'MyFont';
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #ffcb05;
+    text-shadow: 7px 6px 1px #2a75bb;
+
 
 }
 
@@ -26,35 +42,81 @@ body {
 }
 
 .pokemonQuery {
+    width: 100%;
+    min-height: 180px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
 
 }
 
 .pokemonQuery form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .pokemonQuery input[type="text"] {
-
+scale: 1.6;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
 }
 
 .pokemonQuery button {
-
+    margin-top: 25px;
+    scale: 1.6;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 hr {
 
 }
+.imagePokeSpriteTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.imagePoke {
+.spritePoke {
+    width: 100%;
+    min-height: 180px;
+    display:flex;
+
+    justify-content: center;
+    align-items: center;
+
 
 }
 
-.imagePoke img {
+.spritePoke img {
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #2a75bb;
 
 }
+.name-poke{
+    text-align: center;
+    margin-bottom: 15px;
 
+
+}
 .pokemon-info {
-
+    width: 100%;
+    min-height: 180px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pokemon-info h2 {
@@ -80,3 +142,65 @@ hr {
 #contenedorPokemon {
 
 }
+
+h2 {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+
+}
+h2:first-letter{
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.3rem;
+    font-weight: normal;
+    text-justify: inter-word;
+    margin: 15px 0;
+}
+
+/* Carbon Glass - Aura */
+.aura-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.aura-layer-1 {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(145deg, rgba(9,9,11,0.98) 0%, rgba(39,39,42,0.72) 48%, rgba(24,24,27,0.88) 100%);
+  mix-blend-mode: normal;
+  transform: translateZ(0);
+  will-change: transform;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.aura-layer-2 {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.07) 43%, rgba(161,161,170,0.12) 50%, transparent 67%);
+  mix-blend-mode: screen;
+  filter: blur(40px);
+  transform: translateZ(0);
+  will-change: transform;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.aura-layer-3 {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse 42% 35% at 70% 30%, rgba(212,212,216,0.14) 0%, transparent 68%);
+  mix-blend-mode: screen;
+  filter: blur(80px);
+  transform: translateZ(0);
+  will-change: transform;
+  pointer-events: none;
+  z-index: -1;
+}
+

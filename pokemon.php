@@ -23,8 +23,13 @@ if (!empty($pokemon)) {
 </head>
 <body>
 <?php include_once 'header.php'; ?>
+<div class="aura-bg">
+  <div class="aura-layer-1" aria-hidden="true"></div>
+  <div class="aura-layer-2" aria-hidden="true"></div>
+  <div class="aura-layer-3" aria-hidden="true"></div>
+</div>
 <section class="titlePOke">
-    <h1>Pokemon Finder</h1>
+    <h1>Pokemon Search Engine</h1>
 </section>
 
 <section class="pokemonQuery">
@@ -37,12 +42,11 @@ if (!empty($pokemon)) {
 
 
 <?php if ($datos): ?>
-    <div class="imagePoke">
-        <img src="<?php echo $datos['sprites']['front_default']; ?>" alt="<?php echo htmlspecialchars($pokemon); ?>">
-        <img src="<?php echo $datos['sprites']['front_shiny']; ?>" alt="<?php echo htmlspecialchars($pokemon); ?>">
-    </div>
+
+
+        <div class="name-poke"><h2><?php echo htmlspecialchars($pokemon); ?></h2></div>
+
     <div class="pokemon-info">
-        <h2><?php echo htmlspecialchars($pokemon); ?></h2>
         <p>Type: <?php echo implode(', ', array_map(function($type) { return $type['type']['name']; }, $datos['types'])); ?></p>
         <p>Height: <?php echo $datos['height']/10; ?> m</p>
         <p>Weight: <?php echo $datos['weight']/10; ?> kg</p>
@@ -52,6 +56,14 @@ if (!empty($pokemon)) {
 <?php elseif (!empty($pokemon)): ?>
     <p style="text-align: center; color: red;">Pokémon not found. Try another one!</p>
 <?php endif; ?>
+    <div class="imagePokeSpriteTitle">
+        <h2>Sprites</h2>
+    </div>
+    <div class="spritePoke">
+        <img src="<?php echo $datos['sprites']['front_default']; ?>" alt="<?php echo htmlspecialchars($pokemon); ?>">
+        <img src="<?php echo $datos['sprites']['front_shiny']; ?>" alt="<?php echo htmlspecialchars($pokemon); ?>">
+    </div>
+
 
 <hr>
 
@@ -68,8 +80,6 @@ if (!empty($pokemon)) {
 
 
 <?php include_once 'footer.php'; ?>
-
-
 
 
 
