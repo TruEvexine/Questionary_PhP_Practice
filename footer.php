@@ -2,7 +2,7 @@
 <footer class="main-footer">
     <div class="footer-container">
         <section class="copyright">
-            <p>Copyright &copy; 2023. Todos los derechos reservados.</p>
+            <p>Copyright &copy; 2026. Rogelio Emmanuel. Todos los derechos reservados.</p>
         </section>
         <section class="nav_footer">
             <nav>

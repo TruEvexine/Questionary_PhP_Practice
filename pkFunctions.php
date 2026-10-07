@@ -1,5 +1,5 @@
 <?php
-$url = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151";
+$url = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=778";
 $respuesta = @file_get_contents($url);
 $datos = $respuesta ? json_decode($respuesta, true) : null;
 

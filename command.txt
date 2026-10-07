@@ -1,1 +1,4 @@
 php -S localhost:8000
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '188490';

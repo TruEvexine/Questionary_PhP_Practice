@@ -33,6 +33,13 @@
 
             </form>
         </main>
+        <div>
+
+        <?php include_once 'connection.php'; ?>
+            <?php include_once 'calificaciones.php'; ?>
+            <?php include_once 'alumnos.php'; ?>
+
+        </div>
     </div>
 </div>
 
