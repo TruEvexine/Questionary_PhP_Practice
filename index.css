@@ -30,7 +30,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 40px 20px 80px 20px;
     width: 100%;
     position: relative;
     z-index: 1;
@@ -61,7 +61,7 @@ body {
 .services {
     max-width: 600px;
     width: 90%;
-    padding: 40px;
+    padding: 30px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     backdrop-filter: blur(10px);
@@ -73,6 +73,7 @@ body {
     align-items: center;
     text-align: center;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    gap: 15px;
 }
 
 .about h2,
@@ -178,4 +179,48 @@ input[type="submit"]:hover {
     background: linear-gradient(135deg, rgba(34, 211, 238, 1), rgba(59, 130, 246, 1));
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(34, 211, 238, 0.4);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+th,
+td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+    background: rgba(34, 211, 238, 0.15);
+    color: #22d3ee;
+    font-weight: 600;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+h2 {
+    color: #e2e8f0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 30px 0 20px 0;
+    text-align: center;
+}
+
+h1 {
+    color: #e2e8f0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 20px 0 15px 0;
+    text-align: center;
 }

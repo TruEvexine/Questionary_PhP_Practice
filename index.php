@@ -34,7 +34,8 @@
             </form>
         </main>
         <div>
-
+        <br>
+            <h2>PHP Tables</h2>
         <?php include_once 'connection.php'; ?>
             <?php include_once 'calificaciones.php'; ?>
             <?php include_once 'alumnos.php'; ?>

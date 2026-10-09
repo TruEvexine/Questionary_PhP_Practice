@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <link rel="stylesheet" href="header.css">
 <header class="main-header">
     <div class="header-container">
@@ -7,6 +8,11 @@
         <section class="nav_header nav_footer">
             <nav>
                 <ul>
+                    <?php if(isset($_SESSION['user_id'])): ?>
+                        <li><a href="dashboard.php">Dashboard</a></li>
+                    <?php else: ?>
+                        <li><a href="login.php">Login</a></li>
+                    <?php endif; ?>
                     <li><a href="pokemon.php">Pokemon</a></li>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="services.php">Services</a></li>
